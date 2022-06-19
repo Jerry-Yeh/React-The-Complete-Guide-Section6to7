@@ -1,6 +1,6 @@
 /** @format */
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 import Card from "../UI/Card";
 import Button from "../UI/Button";
@@ -66,7 +66,9 @@ const NewUser = (props) => {
   };
 
   return (
-    <Wrapper>
+    <React.Fragment>
+    {/* <React
+    <> */}
       {error && <ErrorModal
         title={error.title}
         message={error.message}
@@ -91,7 +93,9 @@ const NewUser = (props) => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </Wrapper>
+      {/* </Fragment>
+    </> */}
+    </React.Fragment>
   );
 };
 
