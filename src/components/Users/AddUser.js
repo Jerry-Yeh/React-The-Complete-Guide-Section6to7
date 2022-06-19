@@ -72,7 +72,7 @@ const NewUser = (props) => {
       {error && <ErrorModal
         title={error.title}
         message={error.message}
-        onClose={closeHandler}
+        onConfirm={closeHandler}
       ></ErrorModal>}
       <Card className={classes.input}>
         <form onSubmit={submitHandler}>
